@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Head from 'next/head'
 
 const ItDepartment = () => {
@@ -8,9 +9,12 @@ const ItDepartment = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div id="hero hero__it">
-          IT Department
-        </div>
+        <section className="hero hero__it">
+          <p>Ведутся технические работы...</p>
+          <Link href="/">
+            <a className="nav__link">Главная</a>
+          </Link>
+        </section>
       </main>
     </>
   )
