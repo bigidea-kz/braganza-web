@@ -1,0 +1,65 @@
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    width: 100%;
+
+    .header__brand {
+        font-family: "Oswald-Bold";
+        text-transform: uppercase;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .header__nav-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        span {
+            width: 30px;
+            height: 2px;
+            background-color: $white;
+            margin-top: 4px;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+section.hero.hero__advertising {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+
+    .headline {
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    .description {
+        font-family: "Oswald-Light";
+        font-size: 24px;
+    }
+
+    .hero-advertising__nav {
+        margin-top: 30px;
+
+        .nav__link {
+            font-family: "Oswald-Regular";
+            border: 2px solid $white;
+            border-radius: 20px;
+            margin-right: 1rem;
+            color: $white;
+            &:hover {
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+}
